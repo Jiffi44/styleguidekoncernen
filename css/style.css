@@ -1,0 +1,576 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(8, 4, 14);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* HEADER */
+
+.top-header{
+    height: 90px;
+
+/* Headern använder sekundärfärgen #94a2b2
+med transparens för att skapa en modern glas-effekt
+ovanpå bakgrundsbilden. */
+    background-color: rgba(148, 162, 178, 0.4);
+
+    backdrop-filter: blur(10px);
+
+    
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+
+    align-items: center;
+
+    padding: 0 2rem;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo{
+    width: 80px;
+    height: auto;
+}
+
+.top-nav{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+    flex-wrap: wrap;
+
+}
+
+.top-nav a{
+    text-decoration: none;
+    color: white;
+
+    font-size: 1rem;
+
+    transition: 0.3s;
+}
+
+.top-nav a:hover{
+    opacity: 0.7;
+}
+
+.login-btn{
+    margin-left: auto;
+
+    background-color: #2a3753;
+    color: white;
+
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.login-btn:hover{
+    opacity: 0.7;
+}
+
+/* MAIN */
+
+main{
+    min-height: calc(100vh - 180px);
+}
+
+/* HERO */
+
+.hero{
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    text-align: left;
+
+    padding: 0 10%;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),
+        url("../images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 6rem 10%;
+}
+.hero h1{
+    font-size: 4rem;
+    max-width: 700px;
+}
+
+/* SEKTIONER */
+
+.typography-section,
+.colors-section,
+.messages-section,
+.tables-section,
+.panels-section,
+.loading-section,
+.form-section,
+.button-section{
+    padding: 6rem 10%;
+    border-top: 1px solid #2a3753;
+}
+
+.typography-section h2,
+.colors-section h2,
+.messages-section h2,
+.tables-section h2,
+.panels-section h2,
+.loading-section h2,
+.form-section h2,
+.button-section h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.typography-section > p,
+.colors-section > p,
+.messages-section > p,
+.tables-section > p,
+.panels-section > p,
+.loading-section > p,
+.form-section > p,
+.button-section > p{
+    color: white;
+    margin-bottom: 3rem;
+    line-height: 1.7;
+    max-width: 700px;
+}
+
+/* TYPOGRAFI */
+
+.type-example{
+    background-color: #2a3753;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.type-example h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.type-example h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.type-example h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.type-example h4{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.type-example p{
+    color: white;
+    line-height: 1.7;
+}
+
+/* KNAPPAR */
+
+.btn{
+    border: none;
+    border-radius: 0.8rem;
+
+    padding: 1rem 2rem;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.standard-btn,
+.function-btn{
+    background-color: #2a3753;
+    color: white;
+}
+
+.standard-btn:hover,
+.function-btn:hover,
+.positive-btn:hover,
+.negative-btn:hover{
+    opacity: 0.7;
+}
+
+.positive-btn{
+    background-color: #16a34a;
+    color: white;
+}
+
+.negative-btn{
+    background-color: #dc2626;
+    color: white;
+}
+
+/* FÄRGSCHEMA */
+
+.color-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+
+.color-card{
+    background-color: #2a3753;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.color-card h3{
+    padding: 1rem 1rem 0.5rem;
+}
+
+.color-card p{
+    padding: 0 1rem 1rem;
+    color: white;
+}
+
+.color-box{
+    height: 120px;
+}
+
+.primary-color{
+    background-color: #2a3753;
+}
+
+.secondary-color{
+    background-color: #94a2b2;
+}
+
+.success-color{
+    background-color: #16a34a;
+}
+
+.danger-color{
+    background-color: #dc2626;
+}
+
+.background-color{
+    background-color: #08040E;
+}
+
+.text-color{
+    background-color: white;
+}
+
+/* MEDDELANDEN */
+
+.message{
+    display: flex;
+    align-items: flex-start;
+
+    gap: 1rem;
+
+    padding: 1.5rem;
+
+    border-radius: 1rem;
+
+    margin-bottom: 2rem;
+}
+
+.message i{
+    font-size: 2rem;
+}
+
+.message h3{
+    margin-bottom: 0.5rem;
+}
+
+.message p{
+    color: white;
+}
+
+.success-message{
+    background-color: rgba(76, 161, 84);
+}
+
+.error-message{
+    background-color: rgba(202, 58, 49);
+}
+
+.info-message{
+    background-color: rgba(54, 65, 83);
+}
+
+/* TABELLER */
+
+.table-wrapper{
+    margin-bottom: 4rem;
+    overflow-x: auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+
+    background-color: #94a2b2;
+
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+thead{
+    background-color: #2a3753;
+}
+
+th,
+td{
+    padding: 1rem;
+    text-align: left;
+}
+
+td{
+    border-top: 1px solid #2a3753;
+}
+
+tbody tr:hover{
+    opacity: 0.7;
+}
+
+/* PANELER */
+
+.panel-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 2rem;
+}
+
+.panel{
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.panel i{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.panel h3{
+    margin-bottom: 1rem;
+}
+
+.panel p{
+    line-height: 1.7;
+}
+
+.positive-panel{
+    border: 2px solid #16a34a;
+}
+
+.neutral-panel{
+    border: 2px solid #2a3753;
+}
+
+.negative-panel{
+    border: 2px solid #dc2626;
+}
+
+/* LADDNING */
+
+.loader{
+    width: 60px;
+    height: 60px;
+
+    border: 6px solid #94a2b2;
+    border-top: 6px solid #2a3753;
+
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* FORMULÄR */
+
+.example-form{
+    background-color: #94a2b2;
+
+    padding: 2rem;
+
+    border-radius: 1rem;
+
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+.example-form label{
+    font-weight: bold;
+}
+
+.example-form input,
+.example-form textarea{
+    padding: 1rem;
+
+    border: 2px solid #2a3753;
+
+    border-radius: 0.7rem;
+
+    background-color: #2a3753;
+
+    color: white;
+
+    font-size: 1rem;
+}
+
+.example-form textarea{
+    min-height: 140px;
+    resize: vertical;
+}
+
+.example-form input:focus,
+.example-form textarea:focus{
+    outline: none;
+    border-color: white;
+}
+
+.form-choice{
+    margin-top: 1rem;
+}
+
+.form-choice p{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-choice label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+}
+
+/* REKLAM LÄNGST NER */
+
+.advertising{
+    background-color: #94a2b2;
+
+    border-top: 1px solid #2a3753;
+
+    padding: 2rem;
+
+    text-align: center;
+}
+
+.advertising h2{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.ad-footer-list{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.ad-footer-list a{
+    text-decoration: none;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    transition: 0.3s;
+}
+
+.ad-footer-list a:hover{
+    opacity: 0.7;
+}
+
+/* RESPONSIV DESIGN */
+
+@media (max-width: 900px){
+
+   .top-header{
+    height: 90px;
+    background-color: #94a2b2;
+    border-bottom: 1px solid #2a3753;
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+
+    align-items: center;
+
+    padding: 0 2rem;
+}
+    .top-nav{
+        display: flex;
+        justify-content: center;
+        gap: 0 2rem;
+    }
+
+    .login-btn{
+        margin-left: 0;
+    }
+
+    .hero h1{
+        font-size: 2.5rem;
+    }
+
+    .type-example h1{
+        font-size: 2.5rem;
+    }
+
+    .type-example h2{
+        font-size: 2rem;
+    }
+}
+.hero .btn{
+    align-self: flex-start;
+    margin-top: 2rem;
+}

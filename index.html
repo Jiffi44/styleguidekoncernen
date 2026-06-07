@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Styleguide</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <header class="top-header">
+
+        <img src="images/KoncernLogga.png" alt="Wigellkoncernens logga" class="logo">
+
+        <nav class="top-nav">
+
+            <a href="#typografi">Typografi</a>
+            <a href="#farger">Färger</a>
+            <a href="#meddelanden">Meddelanden</a>
+            <a href="#tabeller">Tabeller</a>
+            <a href="#standard">Knappar</a>
+            <a href="#paneler">Paneler</a>
+            <a href="#formular">Formulär</a>
+            <a href="#Laddningsindikator">Laddningsindikator</a>
+
+        </nav>
+
+        <button class="btn login-btn">
+            Logga in
+        </button>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h1>Välkommen till Wigellkoncernens Styleguide</h1>
+
+            <button class="btn standard-btn">
+               
+                Standardknapp
+            </button>
+
+
+
+        </section>
+
+        <section class="typography-section" id="typografi">
+
+            <h2>Typografi</h2>
+
+            <p>
+                Typografin visar hur rubriker och brödtext ska se ut
+                på Wigellkoncernens webbsidor.
+            </p>
+
+            <div class="type-example">
+                <h1>H1 - Huvudrubrik</h1>
+                <p>Används endast en gång per sida.</p>
+            </div>
+
+            <div class="type-example">
+                <h2>H2 - Sektionsrubrik</h2>
+                <p>Används för större sektioner.</p>
+            </div>
+
+            <div class="type-example">
+                <h3>H3 - Underrubrik</h3>
+                <p>Används för mindre delar inom en sektion.</p>
+            </div>
+
+            <div class="type-example">
+                <h4>H4 - Mindre rubrik</h4>
+                <p>Används för små rubriker eller korta innehållsblock.</p>
+            </div>
+
+            <div class="type-example">
+                <p>
+                    Detta är brödtext. Brödtext används för längre texter och information
+                    som användaren behöver läsa.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="colors-section" id="farger">
+
+            <h2>Färgschema</h2>
+
+            <p>Dessa färger används i Wigellkoncernens design.</p>
+
+            <div class="color-grid">
+
+                <div class="color-card">
+                    <div class="color-box primary-color"></div>
+                    <h3>Primärfärg</h3>
+                    <p>#2a3753</p>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-box secondary-color"></div>
+                    <h3>Sekundärfärg</h3>
+                    <p>#94a2b2</p>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-box success-color"></div>
+                    <h3>Positiv färg</h3>
+                    <p>#16a34a</p>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-box danger-color"></div>
+                    <h3>Negativ färg</h3>
+                    <p>#dc2626</p>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-box background-color"></div>
+                    <h3>Bakgrund</h3>
+                    <p>#08040E</p>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-box text-color"></div>
+                    <h3>Textfärg</h3>
+                    <p>#ffffff</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="messages-section" id="meddelanden">
+
+            <h2>Meddelanden</h2>
+
+            <p>Meddelanden används för att ge användaren feedback.</p>
+
+            <div class="message success-message">
+                <i class="bi bi-check-circle-fill"></i>
+                <div>
+                    <h3>Sparning lyckades</h3>
+                    <p>Dina ändringar har sparats.</p>
+                </div>
+            </div>
+
+            <div class="message error-message">
+                <i class="bi bi-x-circle-fill"></i>
+                <div>
+                    <h3>Ett fel uppstod</h3>
+                    <p>Det gick inte att spara informationen.</p>
+                </div>
+            </div>
+
+            <div class="message info-message">
+                <i class="bi bi-info-circle-fill"></i>
+                <div>
+                    <h3>Information</h3>
+                    <p>Systemet uppdateras ikväll mellan 02:00–05:00.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="tables-section" id="tabeller">
+
+            <h2>Tabeller</h2>
+
+            <p>Tabeller används för att visa strukturerad information.</p>
+
+            <div class="table-wrapper">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Namn</th>
+                            <th>Team</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Lewis Hamilton</td>
+                            <td>Ferrari</td>
+                            <td>Aktiv</td>
+                        </tr>
+
+                        <tr>
+                            <td>Max Verstappen</td>
+                            <td>Red Bull</td>
+                            <td>Aktiv</td>
+                        </tr>
+
+                        <tr>
+                            <td>Fernando Alonso</td>
+                            <td>Aston Martin</td>
+                            <td>Aktiv</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </section>
+
+        <section class="button-section" id="standard">
+
+            <h2>Knappar</h2>
+
+            <p>Knappar används för olika typer av handlingar.</p>
+
+            <button class="btn standard-btn">
+                Standardknapp
+            </button>
+
+            <button class="btn function-btn">
+                <i class="bi bi-printer"></i>
+                Funktionsknapp
+            </button>
+
+            <button class="btn positive-btn">
+                Spara
+            </button>
+
+            <button class="btn negative-btn">
+                Ta bort
+            </button>
+
+        </section>
+
+        <section class="panels-section" id="paneler">
+
+            <h2>Paneler</h2>
+
+            <p>Paneler används för att gruppera information.</p>
+
+            <div class="panel-grid">
+
+                <div class="panel positive-panel">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <h3>Positiv panel</h3>
+                    <p>Denna panel används för positiva händelser.</p>
+                </div>
+
+                <div class="panel neutral-panel">
+                    <i class="bi bi-info-circle-fill"></i>
+                    <h3>Neutral panel</h3>
+                    <p>Neutral information för vanliga händelser.</p>
+                </div>
+
+                <div class="panel negative-panel">
+                    <i class="bi bi-exclamation-triangle-fill"></i>
+                    <h3>Negativ panel</h3>
+                    <p>Negativa paneler används vid fel eller varningar.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="loading-section" id="Laddningsindikator">
+
+            <h2>Laddningsindikator</h2>
+
+            <p>
+                Laddningsindikator används när systemet arbetar,
+                till exempel vid sparning eller hämtning av data.
+            </p>
+
+            <div class="loader"></div>
+
+        </section>
+
+        <section class="form-section" id="formular">
+
+            <h2>Formulär</h2>
+
+            <p>
+                Formulär används när användaren ska skriva in information
+                eller göra olika val.
+            </p>
+
+            <form class="example-form">
+
+                <label for="name">Namn</label>
+                <input type="text" id="name" placeholder="Skriv ditt namn">
+
+                <label for="email">E-post</label>
+                <input type="email" id="email" placeholder="namn@exempel.se">
+
+                <label for="message">Meddelande</label>
+                <textarea id="message" placeholder="Skriv ditt meddelande"></textarea>
+
+                <div class="form-choice">
+                    <p>Välj typ av konto</p>
+
+                    <label>
+                        <input type="radio" name="account">
+                        Privat
+                    </label>
+
+                    <label>
+                        <input type="radio" name="account">
+                        Företag
+                    </label>
+                </div>
+
+                <div class="form-choice">
+                    <label>
+                        <input type="checkbox">
+                        Jag godkänner villkoren
+                    </label>
+                </div>
+
+                <button class="btn positive-btn" type="submit">
+                    Skicka
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="advertising">
+
+        <h2>Reklamplats</h2>
+
+        <div class="ad-footer-list">
+
+            <a href="#">
+                <i class="bi bi-megaphone"></i>
+                Annons 1
+            </a>
+
+            <a href="#">
+                <i class="bi bi-star"></i>
+                Annons 2
+            </a>
+
+            <a href="#">
+                <i class="bi bi-gift"></i>
+                Annons 3
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
